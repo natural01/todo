@@ -1,4 +1,4 @@
-package main
+package pkg
 
 import (
 	"net/http"
@@ -16,7 +16,3 @@ func (s *Server) Run(handler http.Handler) error {
 
 	return s.HttpServer.ListenAndServe()
 }
-
-//func (s *Server) Stop(context context.Context) error {
-//	return s.HttpServer.Shutdown(context)
-//}
